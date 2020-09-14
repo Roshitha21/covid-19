@@ -1,0 +1,32 @@
+<div class="d-flex justify-content-center"> 
+    <div class="spinner-border" role="status" > 
+        <span class="sr-only" id="loading"></span> 
+    </div> 
+    </div>
+    <table class="table" id='tab'>  
+        <thead> 
+        <tr> 
+            <th scope="col">State</th> 
+            <th scope="col">Rural Hospitals </th> 
+            <th scope="col">Rural Beds</th> 
+            <th scope="col">Urban Hospitals </th>  
+            <th scope="col">Urban Beds</th> 
+            <th scope="col">Total Hospitals </th> 
+            <th scope="col">Total Beds(State Wise)</th>
+            
+        </tr> 
+        </thead> 
+        <tbody> 
+        <tr *ngFor="let e of lis;"> 
+            <td> {{ e.state }}</td>
+            <td> {{ e.ruralHospitals}}</td>
+            <td> {{ e.ruralBeds }}</td>
+            <td> {{ e.urbanHospitals }}</td>
+            <td> {{ e.urbanBeds }}</td>
+            <td> {{ e.totalHospitals }}</td>
+            <td> {{ e.totalBeds }}</td>
+            
+        </tr> 
+        </tbody> 
+    </table>    
+    

@@ -1,0 +1,35 @@
+<link href="https://unpkg.com/bootstrap-table@1.17.1/dist/bootstrap-table.min.css" rel="stylesheet">
+
+<script src="https://unpkg.com/bootstrap-table@1.17.1/dist/bootstrap-table.min.js"></script>
+<script src="https://unpkg.com/bootstrap-table@1.17.1/dist/extensions/filter-control/bootstrap-table-filter-control.min.js"></script>
+
+<div class="d-flex justify-content-center"> 
+    <div class="spinner-border" role="status" > 
+        <span class="sr-only" id="loading"></span> 
+    </div> 
+    </div>
+    <table class="table" id='tab'>  
+        <thead> 
+        <tr> 
+            <th scope="col">State Name</th> 
+            <th scope="col">Institute Name </th> 
+            <th scope="col">City</th> 
+            <th scope="col">Type </th>  
+            <th scope="col">Admission Capacity</th> 
+            <th scope="col">Hospital Beds </th> 
+            
+        </tr> 
+        </thead> 
+        <tbody> 
+        <tr *ngFor="let e of lis;"> 
+            <td> {{ e.state }}</td>
+            <td> {{ e.name}}</td>
+            <td> {{ e.city }}</td>
+            <td> {{ e.ownership }}</td>
+            <td> {{ e.admissionCapacity }}</td>
+            <td> {{ e.hospitalBeds }}</td>
+            
+        </tr> 
+        </tbody> 
+    </table>    
+    

@@ -1,0 +1,24 @@
+<div class="d-flex justify-content-center"> 
+  <div class="spinner-border" role="status" > 
+      <span class="sr-only" id="loading"></span> 
+  </div> 
+  </div>
+  <table class="table" id='tab'>  
+      <thead> 
+      <tr> 
+          <th scope="col">State Name </th> 
+          <th scope="col">Helpline Number </th> 
+  
+          
+      </tr> 
+      </thead> 
+      <tbody> 
+      <tr *ngFor="let e of lis;"> 
+          <td> {{ e.loc }}</td>
+         <td> {{e.number}}</td>
+   
+          
+      </tr> 
+      </tbody> 
+  </table>    
+  
